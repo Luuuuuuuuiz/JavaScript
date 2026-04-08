@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Verificador de velocidade</h1>
+    Informe a velocidade do seu veiculo automobilistico: <input type="number" name="caixavel" id="caixavel">km/h
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        function verificar() {
+            var vel = Number(window.document.getElementById('caixavel').value)
+            var r = window.document.getElementById('res')
+            r.innerHTML = `<p>Sua velocidade é de <strong>${vel}</strong>Km/h</p>`
+            if (vel > 60) {
+                r.innerHTML += `<p><strong>MULTADO!!</strong> Limite da via excedido!</p>`
+            }
+            r.innerHTML += `<p>Sempre use cinto!!</p>`
+        }
+    </script>
+</body>
+</html>
