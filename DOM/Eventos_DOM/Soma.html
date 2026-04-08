@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somadora</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        div#res {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somadora Profissional 2.0</h1>
+    <input type="number" name="ctn1" id="ctn1">
+    <input type="number" name="ctn2" id="ctn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resposta:</div>
+    <script>
+        function somar() {
+            var resu = window.document.getElementById('res')
+            var n1 = Number(window.document.getElementById('ctn1').value)
+            var n2 = Number(window.document.getElementById('ctn2').value)
+            var s = n1 + n2
+            resu.innerHTML = `A soma de ${n1} mais ${n2} é <strong>${s}</strong>`
+        }
+    </script>
+</body>
+</html>

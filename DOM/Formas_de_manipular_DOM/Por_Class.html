@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: aqua;
+            font: normal 20pt Arial;
+
+        }
+        h1 {
+            font: normal 30pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1><strong>Dando um bizu no DOM</strong></h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo <strong>DOM</strong> no JavaScript</p>
+    <div class="msg">Clique em mim!</div> <!--Colocar o Class permite manipular o conteúdo dps, no Js-->
+    <script>
+        var d = window.document.getElementsByClassName('msg') [0]
+        d.style.backgroundColor = 'red'
+    </script>
+</body>
+</html>

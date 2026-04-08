@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: aqua;
+            color: white;
+            font: normal 20pt Arial;
+
+        }
+        h1 {
+            font: normal 30pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1><strong>Dando um bizu no DOM</strong></h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo <strong>DOM</strong> no JavaScript</p>
+    <div>Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1] //getElementesByTagName = pega um elemento do body
+        //window.document.write(`O Primeiro paragrafo está escrito assim: "${p1.innerText}"`) //InnerText = Mostra a mensagem desse elemento 
+        window.document.write(`O Primeiro paragrafo está escrito assim: "${p1.innerHTML}"`)// Usar o InnerHTML puxa as formatações feitas nele, como o <strong>
+        p1.style.color= 'red'  //Muda a formatação Style
+        corpo.style.background = 'black'
+    </script>
+</body>
+</html>
