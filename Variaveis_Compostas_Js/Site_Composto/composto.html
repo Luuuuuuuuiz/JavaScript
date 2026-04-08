@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composto</title>
+    <link rel="stylesheet" href="estiloc.css">
+</head>
+<body>
+    <header>
+        <h1>Composto</h1>
+    </header>
+    <section>
+        <div>
+            Número (entre 1 a 100): 
+            <input type="number" name="numero" id="txtn">
+            <input type="button" value="Adicionar" onclick="adicionar()">
+            <br><select name="selvalores" id="selv" size="10"></select>
+            <br><input type="button" value="Finalizar" onclick="finalizar()">
+            <input type="button" value="Limpar" onclick="limpar()">
+        </div>
+        <div id="res">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Umineko</p>
+    </footer>
+    <script src="scriptc.js"></script>
+</body>
+</html>
