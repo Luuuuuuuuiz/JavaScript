@@ -26,6 +26,8 @@ function adicionar() {
             }
         }
     }
+    txtn.value = ''
+    txtn.focus()
 }
 
 function finalizar() {
@@ -58,6 +60,8 @@ function limpar() {
     lista = []
     selv.innerHTML = ''
     res.innerHTML = ''
+    txtn.value = ''
+    txtn.focus()
 }
 
 var lista = []
